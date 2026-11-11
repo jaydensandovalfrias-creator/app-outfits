@@ -2,3 +2,6 @@
 .env
 .env.*
 !.env.example
+
+# Fotos personales y resultados de pruebas (nunca se suben)
+pruebas/fotos/
