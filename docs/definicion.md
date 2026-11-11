@@ -18,6 +18,22 @@ Esta definición reemplaza todo lo acordado antes.
 - Pensada primero para celular.
 - Antes de construir la interfaz se presentan 3 propuestas de la pantalla principal, dentro de este estilo, para elegir una.
 
+### Pantalla principal elegida: A, abre en el probador
+
+- Arriba: el nombre "Vestidor" y el botón para agregar prenda.
+- En medio: la silueta con el outfit actual y el botón "Verlo en mí".
+- Abajo: pestañas Arriba, Abajo y Calzado, con una tira de prendas para tocar y poner.
+- Barra inferior: Vestidor, Probador (activa al abrir) y Recomiéndame.
+
+### Tokens
+
+- Color: hueso (marca) `#EDE6D8`, fondo `#0F0E0D`, superficie `#1A1918`, superficie 2 `#252321`, borde `#34312E`, texto `#E4DFD6`, texto secundario `#9C968D`, error `#E5675A`, advertencia `#E0B04A`, éxito `#6DBE8A`.
+- El acento hueso solo marca la acción principal y lo seleccionado. Error, advertencia y éxito se usan únicamente para estados.
+- Tipografía: Archivo. El nombre "Vestidor" va expandido (ancho 125%, peso 700). Escala: 12, 14, 16, 20, 25 y 31 px.
+- Espaciado: 4, 8, 12, 16, 24, 32, 48 y 64 px.
+- Radios: 8 px en fotos, 14 px en paneles y 999 px en botones.
+- Áreas táctiles de al menos 44 px.
+
 ## Vestidor
 
 1. Subo la foto de la prenda.
