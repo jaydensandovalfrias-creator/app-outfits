@@ -89,3 +89,19 @@ Datos técnicos de la API:
 ## Skills (en `.claude/skills/` del repo)
 
 - frontend-design: repo github.com/anthropics/claude-code, carpeta `plugins/frontend-design`. Desde ahora.
+  - Nota de instalación: esa carpeta ya no está en anthropics/claude-code. Su marketplace apunta a github.com/anthropics/claude-plugins-official, carpeta `plugins/frontend-design`, y de ahí se instaló.
+- supabase/agent-skills: se instala con `npx skills add supabase/agent-skills`. Desde la fase 1.
+- apple-design y emil-design-eng: repo github.com/emilkowalski/skills. Solo en la fase 5, una a la vez.
+- Antes de instalar cada una, confirmar que existe en esa fuente.
+
+## Fases
+
+Detenerse al final de cada una para revisión.
+
+0. Instala frontend-design y supabase/agent-skills en `.claude/skills/` y confirma que cargan. Luego dime paso a paso qué configuro yo en Supabase, Vercel, NVIDIA y en el entorno de Claude Code (dominios permitidos y secretos). Espera a que te confirme cada cosa.
+1. Base de datos, Storage, Auth y Edge Functions, con pruebas de que RLS bloquea el acceso entre usuarios.
+2. Interfaz con la pantalla A como base: login, vestidor, subir prenda, perfil con maniquí, consentimiento y análisis. Aquí conectamos Chrome DevTools MCP.
+3. Probador: silueta con arrastre y "Verlo en mí".
+4. Recomiéndame con "no match".
+5. Pulido con apple-design y emil-design-eng, y PWA instalable.
+6. Revisión antes de publicar: secretos fuera del repo, RLS, auth del lado del servidor, rate limiting y logs, validación de inputs, tipos y tamaño de archivos, API que devuelva solo lo necesario, security headers, HTTPS, escaneo de dependencias. Dime cómo comprobaste cada punto, junta la rama con main y despliega en Vercel.
