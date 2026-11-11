@@ -1,0 +1,19 @@
+project_id = "oerisqvqavxaczryocis"
+
+# Todas las funciones validan la sesión con @supabase/server (withSupabase),
+# así que la verificación de JWT de la plataforma va apagada, como indica la
+# documentación para las keys nuevas (publishable y secret).
+[functions.etiquetar-prenda]
+verify_jwt = false
+
+[functions.analizar-cuerpo]
+verify_jwt = false
+
+[functions.verlo-en-mi]
+verify_jwt = false
+
+[functions.recomendar]
+verify_jwt = false
+
+[functions.admin-limites]
+verify_jwt = false
