@@ -1,0 +1,4 @@
+Pillow>=12
+numpy>=2
+# OpenCV 5 ya no trae los clasificadores Haar en cv2.data, por eso <5
+opencv-python-headless>=4.10,<5

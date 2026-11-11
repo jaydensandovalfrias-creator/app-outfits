@@ -5,3 +5,7 @@
 
 # Fotos personales y resultados de pruebas (nunca se suben)
 pruebas/fotos/
+
+# Python
+__pycache__/
+.venv/
