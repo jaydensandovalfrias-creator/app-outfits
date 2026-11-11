@@ -70,6 +70,22 @@ Datos técnicos de la API:
 
 ### Postproceso
 
-- Pegar mi cabeza original con máscara suavizada, igualando el tono de piel con el cuello (color transfer).
-- Corregir el color de cada prenda comparando su color promedio real contra el generado.
-- Reusar el código de las pruebas en `pruebas/`.
+- Pegar mi cabeza original con máscara suavizada igualando tono de piel con el cuello (color transfer), y corregir el color de cada prenda comparando su color promedio real contra el generado. Reúsa el código de `pruebas/scripts/`.
+
+### Cuota
+
+- 10,000 neuronas diarias para toda la app (~40 outfits con calzado). Límite diario por usuario configurable y contador visible.
+
+## Análisis de cuerpo
+
+- Con un modelo de visión gratis de NVIDIA: tono de piel y colores que favorecen, y proporciones para recomendar cortes y largos. Se guarda en el perfil y alimenta el modo Recomiéndame.
+
+## Stack, privacidad y seguridad
+
+- PWA instalable en Vercel; Supabase (Auth, base de datos, Storage); todas las llamadas con API keys en Supabase Edge Functions.
+- Fotos en buckets privados con RLS, URLs firmadas de caducidad corta, EXIF eliminado antes de subir. API keys solo en secretos de Edge Functions; solo la anon key va al cliente. `pruebas/fotos/` sigue en `.gitignore`.
+- Skeleton del mismo tamaño que el contenido final; vista de progreso propia durante "Verlo en mí"; spinner solo en acciones cortas. Accesibilidad completa y prefers-reduced-motion. Dime el nombre técnico de cada animación que uses.
+
+## Skills (en `.claude/skills/` del repo)
+
+- frontend-design: repo github.com/anthropics/claude-code, carpeta `plugins/frontend-design`. Desde ahora.
